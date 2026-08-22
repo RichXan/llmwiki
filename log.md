@@ -1,0 +1,201 @@
+---
+title: 变更日志
+type: meta
+aliases:
+  - 日志
+  - 更新记录
+tags:
+  - meta
+  - 日志
+created: 2026-08-17
+updated: 2026-08-17
+---
+
+# 变更日志
+
+本文件采用**只追加**方式维护，按时间倒序记录每次变更。**不修改、不删除历史记录。**
+
+每条记录包含：日期、资料来源、新建页面、更新页面、待人工确认事项。
+
+---
+
+## 2026-08-17
+
+- **日期**：2026-08-17
+- **资料来源**：初始化搭建（无外部资料）
+- **新建页面**：
+  - `AGENTS.md`（维护规范）
+  - `index.md`（全局索引）
+  - `log.md`（本文件）
+  - `wiki/sources/_template.md`
+  - `wiki/concepts/_template.md`
+  - `wiki/entities/_template.md`
+  - `wiki/topics/_template.md`
+- **更新页面**：无
+- **待人工确认**：无
+
+---
+
+## 2026-08-17（增量维护 · 第 1 批）
+
+- **日期**：2026-08-17
+- **资料来源**：`raw/articles/用 Codex + Obsidian 搭建自生长的个人知识库实战.md`（作者苍何，2026-08-09 发布）
+- **新建页面**：
+  - `wiki/sources/codex-obsidian-自生长个人知识库.md`（来源摘要）
+  - `wiki/concepts/llm-wiki.md`（概念）
+  - `wiki/concepts/三层架构.md`（概念）
+  - `wiki/entities/obsidian.md`、`workbuddy.md`、`codex.md`、`wesight.md`、`claude-obsidian.md`、`karpathy.md`、`canghe.md`（实体，共 7 页）
+  - `wiki/topics/自生长个人知识库.md`（主题）
+- **更新页面**：`index.md`（目录概览填充新页面链接）
+- **待人工确认**：
+  - WeSight「知识大脑」内测范围与正式发布时间
+  - 文中模型版本（DeepSeek V4 Flash / Kimi K3 / Doubao-Seed-Evolving 等）能力与价格
+  - Karpathy LLM Wiki 原始公开出处、苍何身份与蓝皮书地址
+
+---
+
+## 2026-08-17（网络检索核实 · 补充实体信息）
+
+- **日期**：2026-08-17
+- **资料来源**：网络检索（WebSearch），非 Raw 层文件
+- **新建页面**：无
+- **更新页面**：
+  - `wiki/entities/wesight.md`（补充 GitHub 地址、五重功能、安装配置、收费模式）
+  - `wiki/entities/claude-obsidian.md`（补充 GitHub 地址、15 个 skill、命令、检索机制、安装方式）
+  - `wiki/entities/canghe.md`（补充其为 WeSight 作者、别名「苍河」）
+  - `wiki/sources/codex-obsidian-自生长个人知识库.md`（待核实项标记已核实）
+- **待人工确认**：
+  - 作者署名「苍何 / 苍河 / 苍老师」是否同一人及规范名
+  - claude-obsidian 存在多个同名仓库（AgriciDaniel / LabinatorSolutions / alexdemenezes），主体与 fork 关系
+  - WeSight「知识大脑」是否仍为会员内测
+
+---
+
+## 2026-08-17（结构优化 · 概念页更名）
+
+- **日期**：2026-08-17
+- **资料来源**：无（用户要求明确概念名，属结构性调整）
+- **新建页面**：无
+- **更新页面**：
+  - 重命名 `wiki/concepts/三层架构.md` → `wiki/concepts/llm-wiki-三层架构.md`（title 改为「LLM Wiki 三层架构（Raw / Wiki / Schema）」）
+  - 同步更新 9 处双链引用：`index.md`、`wiki/sources/codex-obsidian-自生长个人知识库.md`、`wiki/concepts/llm-wiki.md`、`wiki/topics/自生长个人知识库.md`、`wiki/entities/{obsidian,workbuddy,codex,wesight,claude-obsidian}.md`
+- **待人工确认**：无
+- **说明**：原「三层架构」名称过泛（易与软件三层架构混淆），改为「LLM Wiki 三层架构」；旧名「三层架构」保留为 alias，历史双链仍可解析。
+
+---
+
+## 2026-08-17（增量维护 · 第 2 批）
+
+- **日期**：2026-08-17
+- **资料来源**：`raw/articles/去AI味完整实战教程：从自查、改写到文风塑造的全部流程指南.md`（作者 @ai_Goge，2026-08-17 发布）
+- **新建页面**：
+  - `wiki/sources/去ai味完整实战教程.md`（来源摘要）
+  - `wiki/concepts/去ai味.md`（概念）
+  - `wiki/entities/stop-slop.md`、`humanizer-zh.md`、`shuorenhua.md`、`writing-style-skill.md`、`nuwa-skill.md`、`agent-style.md`（实体，共 6 页）
+  - `wiki/topics/ai写作去味.md`（主题综述，含 Skill 全景分类表与完整工作流）
+- **更新页面**：`index.md`（目录概览填充新页面链接）
+- **待人工确认**：
+  - 作者 @ai_Goge 身份
+  - 文中多数 Skill 未给出完整 GitHub 链接，仓库地址与维护状态（stop-slop-zh、Humanizer-zh、qu-ai-wei、shuorenhua、ai-flavor-remover、De-AI-Prompt-Enhancer、humanize-mba-text-skill、AIWriteX 等）
+  - 「AI 检测率」相关论断为作者经验观点，非定量结论
+
+---
+
+## 2026-08-17（网络检索核实 · 去 AI 味 Skill 仓库地址）
+
+- **日期**：2026-08-17
+- **资料来源**：网络检索（WebSearch），非 Raw 层文件
+- **新建页面**：无
+- **更新页面**：
+  - `wiki/entities/stop-slop.md`（补充 stop-slop-zh 多个同名仓库、英文版 stars/安装方式）
+  - `wiki/entities/humanizer-zh.md`（补充英文原版 blader/humanizer + op7418/WoolenWang/idao-cube 三版）
+  - `wiki/entities/shuorenhua.md`（补充 MrGeDiao/Jia-Hong-Peng/1-SKILL 三版）
+  - `wiki/topics/ai写作去味.md`（新增「未单独建页项目的仓库地址」表，覆盖 qu-ai-wei、ai-flavor-remover、De-AI-Prompt-Enhancer、humanize-mba-text-skill、oh-story-claudecode、AIWriteX、taste-skill、两个检测项目）
+  - `wiki/sources/去ai味完整实战教程.md`（待核实项标记已核实）
+- **待人工确认**：
+  - 多个同名多仓库（stop-slop-zh / Humanizer-zh / shuorenhua）的关系与优劣需甄别
+  - 各 Skill 维护状态
+  - 作者 @ai_Goge 身份
+
+---
+
+## 2026-08-17（确定同名 Skill 主推版本）
+
+- **日期**：2026-08-17
+- **资料来源**：GitHub API 客观数据（star / forks / pushed_at），非 Raw 层文件
+- **新建页面**：无
+- **更新页面**：
+  - `wiki/entities/stop-slop.md`、`humanizer-zh.md`、`shuorenhua.md`（明确主推版本 + star 依据）
+  - `wiki/topics/ai写作去味.md`、`wiki/sources/去ai味完整实战教程.md`（待核实改为已确定）
+- **确定结论（按社区口碑 star 数，均支持 Claude Code）**：
+  - stop-slop-zh → `pencil20388-eng/stop-slop-zh`（41★，4 仓库最高，官方 issue 认可）
+  - Humanizer-zh → `op7418/Humanizer-zh`（15481★，绝对领先）
+  - shuorenhua → `MrGeDiao/shuorenhua`（1098★，仍在活跃维护）
+- **用户约定**：Agent 环境为 Claude Code
+
+---
+
+## 2026-08-18（增量维护 · 第 3 批）
+
+- **日期**：2026-08-18
+- **资料来源**：`raw/articles/手调半小时的公众号排版，这篇25秒排完了.md`（作者达芬七 @davinci_seven，2026-08-17 发布）
+- **新建页面**：
+  - `wiki/sources/手调半小时的公众号排版.md`（来源摘要）
+  - `wiki/entities/wechat-article-pipeline.md`、`gzh-design.md`、`davinci-seven.md`（实体，共 3 页）
+  - `wiki/topics/公众号排版自动化.md`（主题综述，含工具生态表与三条工程底线）
+- **更新页面**：
+  - `wiki/entities/wesight.md`（gzh-design 加双链关联）
+  - `index.md`（目录概览填充新页面链接）
+- **待人工确认**：
+  - 作者达芬七真实身份（仅自述"人在加拿大十年"）
+  - xiaowan-wechat-layout、md2wechat 的仓库地址与协议
+  - 六套主题视觉差异为作者主观描述
+
+---
+
+## 2026-08-18（网络检索核实 · 公众号排版底层项目）
+
+- **日期**：2026-08-18
+- **资料来源**：网络检索（WebSearch + GitHub 页面），非 Raw 层文件
+- **新建页面**：
+  - `wiki/entities/xiaowan-wechat-layout.md`（gzh-design 工作流增强层，AGPL-3.0）
+  - `wiki/entities/md2wechat.md`（公众号发布 CLI，BUSL-1.1 商业授权）
+- **更新页面**：
+  - `wiki/topics/公众号排版自动化.md`（工具生态表补双链 + 协议）
+  - `wiki/sources/手调半小时的公众号排版.md`（待核实项标记已核实）
+  - `wiki/entities/wechat-article-pipeline.md`（两个底层项目加双链）
+  - `index.md`（实体列表新增 2 页）
+- **待人工确认**：
+  - xiaowan-wechat-layout 作者署名「小晚 @bbkirstry」与 GitHub「@小晚不在」是否同一人
+  - md2wechat 作者 X「@seekjourney」与 GitHub「geekjourneyx」对应关系
+
+---
+
+## 2026-08-18（网络检索核实 · 作者身份确认）
+
+- **日期**：2026-08-18
+- **资料来源**：网络检索（WebSearch + GitHub 个人主页），非 Raw 层文件
+- **新建页面**：无
+- **更新页面**：
+  - `wiki/entities/xiaowan-wechat-layout.md`（确认作者身份 + star 74）
+  - `wiki/entities/md2wechat.md`（确认作者身份 + star 3.3k + 背景）
+  - `wiki/topics/公众号排版自动化.md`、`wiki/sources/手调半小时的公众号排版.md`（待核实改为已确认）
+- **确认结论**：
+  - xiaowan-wechat-layout：小晚 = @小晚不在 = cyberxiaowan(GitHub) = @bbkirstry(X)，同一人
+  - md2wechat：极客杰尼 = geekjourneyx(GitHub) = @seekjourney(X)，同一人
+
+---
+
+## 2026-08-18（网络检索核实 · 达芬七身份）
+
+- **日期**：2026-08-18
+- **资料来源**：网络检索（WebSearch），非 Raw 层文件
+- **新建页面**：无
+- **更新页面**：
+  - `wiki/entities/davinci-seven.md`（补充背景：定居魁北克、十年移民、前 996 程序员、Stanley-Team 成员；xiaowan/md2wechat 加双链）
+  - `wiki/sources/手调半小时的公众号排版.md`（达芬七身份待核实改为已核实）
+- **结论**：达芬七 = @davinci_seven，定居加拿大魁北克华人，2014–2026 十年移民，前国内 996 程序员，内容方向为 AI/润学。
+
+---
+
+_（新记录追加在下方，日期倒序）_
