@@ -13,7 +13,7 @@ tags:
 sources:
   - "[[去ai味完整实战教程]]"
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-09-12
 ---
 
 # AI 写作去味
@@ -89,7 +89,8 @@ updated: 2026-08-17
 ## 相关页面
 
 - 概念：[[去ai味]]
-- 实体：[[stop-slop]]、[[humanizer-zh]]、[[shuorenhua]]、[[writing-style-skill]]、[[nuwa-skill]]、[[agent-style]]
+- 实体：[[stop-slop]]、[[humanizer-zh]]、[[shuorenhua]]、[[writing-style-skill]]、[[nuwa-skill]]、[[agent-style]]、[[creator-buddy]]（其中 `gzh-short-post` 自带去 AI 腔风格规则与输出自检）
+- 主题：[[公众号内容创作系统]]
 - 来源：[[去ai味完整实战教程]]
 
 ## 来源与待核实问题

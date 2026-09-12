@@ -9,7 +9,7 @@ tags:
   - meta
   - 导航
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-09-12
 ---
 
 # 知识库导航
@@ -60,12 +60,28 @@ updated: 2026-08-17
 - [[自生长个人知识库]]
 - [[ai写作去味]]
 - [[公众号排版自动化]]
+- [[公众号内容创作系统]]
+- [[ai原生软件开发]]
+- [[agent工程]]
 
 ### Concepts
 
 - [[llm-wiki]]
 - [[llm-wiki-三层架构]]
 - [[去ai味]]
+- [[ai原生sdlc]]
+- [[意图文件]]
+- [[产物链]]
+- [[审批门]]
+- [[建议性控制与确定性控制]]
+- [[eval-套件]]
+- [[上下文管理]]
+- [[上下文窗口]]
+- [[长期记忆]]
+- [[kv-cache]]
+- [[注意力机制]]
+- [[agent-loop]]
+- [[上下文压缩]]
 
 ### Entities
 
@@ -87,12 +103,22 @@ updated: 2026-08-17
 - [[xiaowan-wechat-layout]]
 - [[md2wechat]]
 - [[davinci-seven]]
+- [[creator-buddy]]
+- [[anthropic]]
+- [[claude-code]]
+- [[openai]]
+- [[louis-claxton]]
+- [[shao-meng]]
+- [[coder-left]]
 
 ### Sources
 
 - [[codex-obsidian-自生长个人知识库]]
 - [[去ai味完整实战教程]]
 - [[手调半小时的公众号排版]]
+- [[10个skill搭建公众号写作系统]]
+- [[从intent到闭环-ai原生sdlc]]
+- [[agent工程解析-上下文管理]]
 
 ---
 

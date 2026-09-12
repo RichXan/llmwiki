@@ -8,7 +8,7 @@ tags:
   - meta
   - 日志
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-09-12
 ---
 
 # 变更日志
@@ -195,6 +195,34 @@ updated: 2026-08-17
   - `wiki/entities/davinci-seven.md`（补充背景：定居魁北克、十年移民、前 996 程序员、Stanley-Team 成员；xiaowan/md2wechat 加双链）
   - `wiki/sources/手调半小时的公众号排版.md`（达芬七身份待核实改为已核实）
 - **结论**：达芬七 = @davinci_seven，定居加拿大魁北克华人，2014–2026 十年移民，前国内 996 程序员，内容方向为 AI/润学。
+
+---
+
+## 2026-09-12（增量维护 · 第 4 批）
+
+- **日期**：2026-09-12
+- **资料来源**（`raw/articles/`，共 3 篇未维护文章）：
+  1. `10 个 Skill 搭建日更爆文的公众号写作系统.md`（@kongge_space，2026-08-27 发布）
+  2. `从 intent.md 到闭环：AI 原生软件开发的六个阶段、一条产物链、几道审批门 原创.md`（@shao__meng 解读 Anthropic《The AI-Native SDLC playbook》，2026-09-02 发布）
+  3. `万字长文  Agent 工程解析（一）：上下文管理.md`（@coder_left，2026-09-12 发布）
+- **新建页面**：
+  - 来源摘要（3）：`wiki/sources/10个skill搭建公众号写作系统.md`、`从intent到闭环-ai原生sdlc.md`、`agent工程解析-上下文管理.md`
+  - 主题（3）：`wiki/topics/公众号内容创作系统.md`、`ai原生软件开发.md`、`agent工程.md`
+  - 概念（13）：`ai原生sdlc.md`、`意图文件.md`、`产物链.md`、`审批门.md`、`建议性控制与确定性控制.md`、`eval-套件.md`、`上下文管理.md`、`上下文窗口.md`、`长期记忆.md`、`kv-cache.md`、`注意力机制.md`、`agent-loop.md`、`上下文压缩.md`
+  - 实体（7）：`creator-buddy.md`、`anthropic.md`、`claude-code.md`、`openai.md`、`louis-claxton.md`、`shao-meng.md`、`coder-left.md`
+- **更新页面**：
+  - `index.md`（目录概览新增 26 条链接，updated 改为 2026-09-12）
+  - `wiki/topics/公众号排版自动化.md`（补 [[creator-buddy]] / `space-wechat-layout` 同类能力说明，加主题双链）
+  - `wiki/topics/ai写作去味.md`（补 [[creator-buddy]] 及 `gzh-short-post` 去 AI 腔关联）
+- **维护决策（经用户确认）**：
+  - 文章 1 的 10 个 Skill 采用**合并式**：建 `creator-buddy` 一个实体页收录，主题页用表格列出，不逐页拆分（信息量小，与去 AI 味一文"信息少不建页"做法一致）。
+  - 已提交进 `raw/` 但 wiki 从未维护的《从 intent.md 到闭环》**一并处理**。
+- **待人工确认**：
+  - `creator-buddy`（SpaceZephyr/creator-buddy）的 LICENSE、Skill 完整性与维护状态；作者 @kongge_space 身份。
+  - 《Agent 工程解析》中大量 Claude Code 内部实现细节（Snip compact / Micro compact / Context collapse / 各 Token 阈值）为作者对公开实现的推测，需与官方文档核对。
+  - 《从 intent.md 到闭环》为中文解读，原文（英文手册）未入库，产物链/托管设置等表格需与原文校对。
+  - 新增人物页（`shao-meng`、`coder-left`、`louis-claxton`）背景未做网络检索核实。
+  - 公众号商单"报价 = 平均阅读量 × 2"与收入数字为作者个人经验，非普适结论。
 
 ---
 
