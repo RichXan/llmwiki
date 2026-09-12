@@ -1,5 +1,9 @@
-# Obsidian 个人配置（不同步，各端独立）
-.obsidian/
+# Obsidian 个人配置默认不同步；仅共享 Git 插件及其启用状态
+.obsidian/*
+!.obsidian/plugins/
+!.obsidian/plugins/obsidian-git/
+!.obsidian/plugins/obsidian-git/**
+!.obsidian/community-plugins.json
 
 # WorkBuddy 本机会话记忆（不同步）
 .workbuddy/
