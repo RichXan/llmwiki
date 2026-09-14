@@ -14,8 +14,9 @@ tags:
   - 方法论
 sources:
   - "[[去ai味完整实战教程]]"
+  - "[[写作指南-ai真实文风]]"
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-09-14
 ---
 
 # 去 AI 味
@@ -50,14 +51,17 @@ updated: 2026-08-17
 
 1. 去掉最明显的 AI 腔（[[stop-slop]] / [[humanizer-zh]] / qu-ai-wei）
 2. 把文字改成正常人说的话（[[shuorenhua]]）
-3. 建立自己的文风（[[writing-style-skill]] / WRITING.md）
+3. 建立自己的文风（[[writing-style-skill]] / WRITING.md / [[个人写作风格库]]）
 4. 建立自己的思维与判断系统（[[nuwa-skill]]）
+
+> 第 3 层存在两条实现路径：Skill 形态（手动收集样本）与平台功能形态（[[chatgpt]] Writing Style 自动摄取）。分歧与取舍见 [[ai写作去味]] 的「两条技术路线」。
 
 ## 相关页面
 
 - 主题：[[ai写作去味]]
-- 实体：[[stop-slop]]、[[humanizer-zh]]、[[shuorenhua]]、[[writing-style-skill]]、[[nuwa-skill]]
-- 来源：[[去ai味完整实战教程]]
+- 实体：[[stop-slop]]、[[humanizer-zh]]、[[shuorenhua]]、[[writing-style-skill]]、[[nuwa-skill]]、[[chatgpt]]
+- 概念：[[个人写作风格库]]
+- 来源：[[去ai味完整实战教程]]、[[写作指南-ai真实文风]]
 
 ## 来源与待核实问题
 

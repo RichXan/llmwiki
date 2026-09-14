@@ -12,17 +12,31 @@ tags:
   - 去AI味
 sources:
   - "[[去ai味完整实战教程]]"
+  - "[[写作指南-ai真实文风]]"
 created: 2026-08-17
-updated: 2026-09-12
+updated: 2026-09-14
 ---
 
 # AI 写作去味
 
 ## 摘要
 
-「AI 写作去味」是围绕 [[去ai味|去 AI 味]] 的一套完整方法论与工具生态：先厘清 AI 味是什么，再用分层的 Skill 组合（清理套路 → 中文重写 → 说人话 → 建立文风 → 提取思维）把 AI 初稿改造成自然、具体、带作者个人信息的文字。其终点不是骗过 AI 检测器，而是**增加作者信息密度**。
+「AI 写作去味」是围绕 [[去ai味|去 AI 味]] 的一套完整方法论与工具生态：先厘清 AI 味是什么，再用分层的 Skill 组合（清理套路 → 中文重写 → 说人话 → 建立文风 → 提取思维）把 AI 初稿改造成自然、具体、带作者个人信息的文字。其终点不是骗过 AI 检测器，而是**增加作者信息密度**。本主题存在**两条技术路线**（见下），二者对"要不要靠 Skill"持不同立场，本页并列保留。
 
 ## 核心内容
+
+### 两条技术路线（分歧并存）
+
+| | **Skill 组合派** | **真实样本派** |
+| --- | --- | --- |
+| 代表来源 | [[去ai味完整实战教程]]（2026-08-17） | [[写作指南-ai真实文风]]（2026-09-13） |
+| 主张 | 用分层 Skill（stop-slop → humanizer-zh → shuorenhua → [[writing-style-skill]] → [[nuwa-skill]]）逐层改造 AI 初稿 | **不靠任何 Skill**；让模型直接读你写过的真实文本，把"以你为参考"做成机制 |
+| 对提示词 / Skill 的态度 | 有效，是主要手段 | 明确否定："提示词写一句不要有 AI 味，解决不了任何问题" |
+| 载体 | Skill / `WRITING.md`（手动收集样本） | [[chatgpt\|ChatGPT]] 的 Writing Style + Google Drive 语料库（自动摄取、持续更新） |
+| 共同点 | **都指向"增加作者信息"**——一个靠规则约束输出，一个靠样本提供参照 | 同左 |
+| 适用前提 | 任意写作工具链（Claude Code / Codex / 网页端均可） | 依赖 ChatGPT 功能与连接器的可用性 |
+
+> **本库不做取舍**：两条路线共享同一终点（"像你"），分歧在于**用规则还是用样本**。务实做法通常是并用——Skill 负责压掉明显 AI 腔，样本库负责让语言与判断更像本人。[[writing-style-skill]]（"从真实文本提炼文风"的 Skill 形态）恰好落在两条路线的交集上。
 
 ### Skill 全景分类
 
@@ -33,13 +47,13 @@ updated: 2026-09-12
 | 中文 AI 腔改写 | [[humanizer-zh]]、qu-ai-wei | 把 AI 初稿改得像正常中文 | humanizer-zh 建页 |
 | 场景化表达 | [[shuorenhua]] | 按真实场景切换表达 | 是 |
 | 整体去 AI 化 | ai-flavor-remover、De-AI-Prompt-Enhancer | 一次性整体去味 / 把规则固化为 Skill | 否 |
-| 建立个人文风 | [[writing-style-skill]]、WRITING.md | 让 AI 写得像我 | 是 |
+| 建立个人文风 | [[writing-style-skill]]、WRITING.md、[[个人写作风格库]]（平台功能路线） | 让 AI 写得像我 | 是 |
 | 技术写作规范 | [[agent-style]] | 英文技术写作规则（21 条） | 是 |
 | 思维框架提取 | [[nuwa-skill]] | 提取判断方式与思维模型 | 是 |
 | 学术/MBA 论文 | humanize-mba-text-skill | 论文去味（保持正式严谨） | 否 |
 | 网络小说 | oh-story-claudecode | 网文去味（人物/节奏/悬念） | 否 |
 | 内容生产系统 | AIWriteX | 批量内容流水线（热点→发布） | 否 |
-| 前端/UI 审美 | taste-skill | AI 前端 UI 去同质化（**非文章去味**） | 否 |
+| 前端/UI 审美 | [[taste-skill]] | AI 前端 UI 去同质化（**非文章去味**，见 [[ai生成ui]]） | 是 |
 
 ### 未单独建页项目的仓库地址（已检索核实）
 
@@ -88,16 +102,17 @@ updated: 2026-09-12
 
 ## 相关页面
 
-- 概念：[[去ai味]]
-- 实体：[[stop-slop]]、[[humanizer-zh]]、[[shuorenhua]]、[[writing-style-skill]]、[[nuwa-skill]]、[[agent-style]]、[[creator-buddy]]（其中 `gzh-short-post` 自带去 AI 腔风格规则与输出自检）
-- 主题：[[公众号内容创作系统]]
-- 来源：[[去ai味完整实战教程]]
+- 概念：[[去ai味]]、[[个人写作风格库]]
+- 实体：[[stop-slop]]、[[humanizer-zh]]、[[shuorenhua]]、[[writing-style-skill]]、[[nuwa-skill]]、[[agent-style]]、[[taste-skill]]、[[chatgpt]]、[[creator-buddy]]（其中 `gzh-short-post` 自带去 AI 腔风格规则与输出自检）
+- 主题：[[公众号内容创作系统]]、[[ai生成ui]]
+- 来源：[[去ai味完整实战教程]]、[[写作指南-ai真实文风]]
 
 ## 来源与待核实问题
 
-- 来源：[[去ai味完整实战教程]]
+- 来源：[[去ai味完整实战教程]]、[[写作指南-ai真实文风]]
 - ✅ 已核实：表格中未单独建页的项目仓库地址均已在「未单独建页项目的仓库地址」表中列出（网络检索）。
 - ✅ 已确定（按社区口碑 star 数）：三个同名多仓库 Skill 的主推版本如下（均支持 Claude Code）——
   - stop-slop-zh → `pencil20388-eng/stop-slop-zh`（41 stars 最高）
   - Humanizer-zh → `op7418/Humanizer-zh`（15481 stars 绝对领先）
   - shuorenhua → `MrGeDiao/shuorenhua`（1098 stars、仍在活跃维护）
+- ⏳ 待核实（真实样本派）：[[chatgpt]] Writing Style 的可用范围与地区限制；该方案效果为作者自述，**无对照实验**。

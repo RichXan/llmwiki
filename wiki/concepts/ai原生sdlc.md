@@ -13,8 +13,9 @@ tags:
   - SDLC
 sources:
   - "[[从intent到闭环-ai原生sdlc]]"
+  - "[[ai改ui翻车]]"
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-14
 ---
 
 # 概念：AI 原生 SDLC
@@ -37,7 +38,7 @@ updated: 2026-09-12
 
 ### 六个阶段与若干 play
 
-Plan（`intent.md`）→ Design（`spec.md`）→ Build（`plan.md`、diff、测试）→ Test（测试输出 / eval）→ Deploy（带评审记录的 PR）→ Maintain（事故记录 → 新 intent）。原文把 play 分入这 **6 个非线性阶段**，细分约 **16 个 play 条目**；**采纳顺序由依赖图决定，不等于阶段顺序**。详见 [[ai原生软件开发]] 的阶段表。
+Plan（`intent.md`）→ Design（`spec.md`）→ Build（`plan.md`、diff、测试）→ Test（测试输出 / eval；UI 工作用**截图闭合反馈回路**，实操踩坑见 [[视觉自愈循环]]）→ Deploy（带评审记录的 PR）→ Maintain（事故记录 → 新 intent）。原文把 play 分入这 **6 个非线性阶段**，细分约 **16 个 play 条目**；**采纳顺序由依赖图决定，不等于阶段顺序**。详见 [[ai原生软件开发]] 的阶段表。
 
 ### 两条比单个 play 更重要的原则
 
@@ -61,10 +62,10 @@ Plan（`intent.md`）→ Design（`spec.md`）→ Build（`plan.md`、diff、测
 
 ## 相关页面
 
-- 概念：[[意图文件]]、[[产物链]]、[[审批门]]、[[建议性控制与确定性控制]]、[[eval-套件]]
-- 主题：[[ai原生软件开发]]、[[agent工程]]
+- 概念：[[意图文件]]、[[产物链]]、[[审批门]]、[[建议性控制与确定性控制]]、[[eval-套件]]、[[视觉自愈循环]]
+- 主题：[[ai原生软件开发]]、[[agent工程]]、[[ai生成ui]]
 - 实体：[[anthropic]]、[[claude-code]]
-- 来源：[[从intent到闭环-ai原生sdlc]]
+- 来源：[[从intent到闭环-ai原生sdlc]]、[[ai改ui翻车]]
 
 ## 来源与待核实问题
 

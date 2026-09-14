@@ -9,7 +9,7 @@ tags:
   - meta
   - 导航
 created: 2026-08-17
-updated: 2026-09-12
+updated: 2026-09-14
 ---
 
 # 知识库导航
@@ -63,12 +63,14 @@ updated: 2026-09-12
 - [[公众号内容创作系统]]
 - [[ai原生软件开发]]
 - [[agent工程]]
+- [[ai生成ui]]
 
 ### Concepts
 
 - [[llm-wiki]]
 - [[llm-wiki-三层架构]]
 - [[去ai味]]
+- [[个人写作风格库]]
 - [[ai原生sdlc]]
 - [[意图文件]]
 - [[产物链]]
@@ -82,12 +84,14 @@ updated: 2026-09-12
 - [[注意力机制]]
 - [[agent-loop]]
 - [[上下文压缩]]
+- [[视觉自愈循环]]
 
 ### Entities
 
 - [[obsidian]]
 - [[workbuddy]]
 - [[codex]]
+- [[chatgpt]]
 - [[wesight]]
 - [[claude-obsidian]]
 - [[karpathy]]
@@ -103,10 +107,12 @@ updated: 2026-09-12
 - [[xiaowan-wechat-layout]]
 - [[md2wechat]]
 - [[davinci-seven]]
+- [[taste-skill]]
 - [[creator-buddy]]
 - [[anthropic]]
 - [[claude-code]]
 - [[openai]]
+- [[ling-3-flash-vl]]
 - [[louis-claxton]]
 - [[shao-meng]]
 - [[coder-left]]
@@ -119,6 +125,8 @@ updated: 2026-09-12
 - [[10个skill搭建公众号写作系统]]
 - [[从intent到闭环-ai原生sdlc]]
 - [[agent工程解析-上下文管理]]
+- [[写作指南-ai真实文风]]
+- [[ai改ui翻车]]
 
 ---
 

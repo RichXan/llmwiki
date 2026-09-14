@@ -13,10 +13,11 @@ tags:
   - 文风
 sources:
   - "[[去ai味完整实战教程]]"
+  - "[[写作指南-ai真实文风]]"
   - "https://github.com/lout33/writing-style-skill"
   - "https://github.com/jzOcb/writing-style-skill"
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-09-14
 ---
 
 # writing-style-skill
@@ -48,12 +49,16 @@ writing-style-skill 是让 AI「写得像我」的 [[去ai味|去 AI 味]] 进�
 
 属于「第三层：建立自己的文风」，目标是"不要只像真人，要开始像你"。
 
+### 与 ChatGPT Writing Style 的关系（同源异流）
+
+本 Skill 与 [[个人写作风格库]]（[[chatgpt]] 的 Writing Style + 语料库）都以"从真实文本提炼个人文风"为核心，区别在载体：前者是 **Skill 形态、需手动收集样本**，后者是 **平台原生功能、自动摄取并持续更新**。可以说本 Skill 恰好落在 [[ai写作去味]] 「两条技术路线」的交集上——既属于 Skill 生态，又是样本派思路。
+
 ## 相关页面
 
-- 概念：[[去ai味]]
-- 实体：[[nuwa-skill]]、[[stop-slop]]、[[humanizer-zh]]、[[shuorenhua]]
+- 概念：[[去ai味]]、[[个人写作风格库]]
+- 实体：[[nuwa-skill]]、[[stop-slop]]、[[humanizer-zh]]、[[shuorenhua]]、[[chatgpt]]
 - 主题：[[ai写作去味]]
-- 来源：[[去ai味完整实战教程]]
+- 来源：[[去ai味完整实战教程]]、[[写作指南-ai真实文风]]
 
 ## 来源与待核实问题
 

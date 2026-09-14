@@ -8,7 +8,7 @@ tags:
   - meta
   - 日志
 created: 2026-08-17
-updated: 2026-09-12
+updated: 2026-09-14
 ---
 
 # 变更日志
@@ -247,6 +247,34 @@ updated: 2026-09-12
   - creator-buddy 仓库无 LICENSE 文件；"三年三万粉、月入一两万"仍为作者自述。
   - @coder_left（程序员 Left）身份检索未获可靠资料；@shao__meng 具体身份未证实（其解读帖被 BitTide 等聚合站收录）。
   - 部分中文二手解读转述的背景数字（如"Anthropic 内部约 80% 合入代码由 Claude 完成"）未见原文出处。
+
+---
+
+## 2026-09-14（增量维护 · 第 5 批）
+
+- **日期**：2026-09-14
+- **资料来源**（`raw/articles/`，共 2 篇未维护文章）：
+  1. `写作指南：让 AI 写作无限接近你的真实文风.md`（@SenMufs，2026-09-13 发布）
+  2. `越改越烂！为什么 AI 自动修改 UI 总是翻车？「附终极解法」.md`（@Lonely__MH，2026-09-13 发布）
+- **新建页面**：
+  - 来源摘要（2）：`wiki/sources/写作指南-ai真实文风.md`、`ai改ui翻车.md`
+  - 主题（1）：`wiki/topics/ai生成ui.md`
+  - 概念（2）：`wiki/concepts/个人写作风格库.md`、`视觉自愈循环.md`
+  - 实体（3）：`wiki/entities/chatgpt.md`、`ling-3-flash-vl.md`、`taste-skill.md`
+- **更新页面**：
+  - `index.md`（目录概览新增 8 条，updated 改为 2026-09-14）
+  - `wiki/topics/ai写作去味.md`（**新增「两条技术路线（分歧并存）」**；taste-skill 建页后改链接；相关页面与来源补充）
+  - `wiki/concepts/去ai味.md`（第 3 层补两条实现路径；相关页面补充）
+  - `wiki/entities/writing-style-skill.md`（新增「与 ChatGPT Writing Style 的关系：同源异流」）
+  - `wiki/entities/openai.md`（补 [[chatgpt]] 产品条目）
+  - `wiki/concepts/ai原生sdlc.md`（Test 阶段交叉引用 [[视觉自愈循环]]）
+- **保留分歧（分歧并存）**：文章 1 明确否定"靠提示词与去 AI 味 Skill"的路线，与本库既有的 Skill 组合路线构成对立。已在 `ai写作去味.md` 新增「两条技术路线」表并列保留（**Skill 组合派 vs 真实样本派**），**不取单一结论**，并指出二者共享"增加作者信息"的终点。
+- **待人工确认**：
+  - 两篇作者（@SenMufs、@Lonely__MH）身份未核实。
+  - ChatGPT Writing Style 的可用范围与地区限制；效果为作者自述、无对照实验。
+  - 原文目录名拼写不一致（`Eian Writing Corpus` / `EWriting Corpus`），**疑为笔误**，页面已保留原样并标注。
+  - Ling-3.0-flash-VL 的参数与"限免 2 周"为转引；"7 秒"为单次非受控记录。
+  - UI 自愈实验仅两张卡片、两次录屏，作者自述"说明不了统计规律"。
 
 ---
 
