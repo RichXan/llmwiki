@@ -226,4 +226,28 @@ updated: 2026-09-12
 
 ---
 
+## 2026-09-12（网络检索核实 · AI 原生 SDLC 与上下文机制）
+
+- **日期**：2026-09-12
+- **资料来源**：网络检索（WebSearch + WebFetch 原文），非 Raw 层文件
+- **更新页面**：
+  - `wiki/sources/10个skill搭建公众号写作系统.md`、`wiki/entities/creator-buddy.md`（核实作者身份、仓库协议/热度/安装/使用边界、Skill 数量修正、第三方衍生 GZH Buddy）
+  - `wiki/sources/从intent到闭环-ai原生sdlc.md`、`wiki/concepts/ai原生sdlc.md`（原文已取到并核对；play 计数口径；术语别名）
+  - `wiki/entities/anthropic.md`、`wiki/entities/claude-code.md`（Claude Tag / Claude Security / Cowork 状态；1M 窗口型号）
+  - `wiki/concepts/上下文压缩.md`（**新增第五节「不同来源的说法差异」**，并列保留多种口径）
+  - `wiki/concepts/上下文窗口.md`、`wiki/entities/openai.md`（1M 窗口型号核实）
+  - `wiki/concepts/eval-套件.md`（补官方 CI 示例 `agent-evals.yml`）
+  - `wiki/entities/shao-meng.md`、`wiki/entities/coder-left.md`（作者身份核实结果）
+- **确认结论**：
+  - **creator-buddy**：作者 = 空格.space（@kongge_space = GitHub「空格的键盘」）；仓库 `SpaceZephyr/creator-buddy` 含公众号 / 小红书 / 视频三条产品线；README 声明 MIT 但**根目录无 LICENSE 文件**；`gzh-Skills` 实测 12 个（帖子列举 10 个）。
+  - **Anthropic 手册**：原文确为 Louis Claxton 2026-08-21 发布，致谢 Jim Blackhurst / Will Steuk / Jamal Arif；6 个阶段、约 16 个 play 条目；术语亦称 **agentic SDLC / AI SDLC**。
+  - **1M 上下文窗口** = Claude Opus 4.6 / Sonnet 4.6（约 2026-03 GA）。
+- **保留分歧（分歧并存）**：Claude Code 上下文压缩机制的**层数**（4 / 5 / 6）、**命名**（Full compact / AutoCompact / Reactive compact / Traditional compact）与**阈值**（93%、80% / 78%）在不同来源间不一致，已在 `上下文压缩.md` 第五节并列保留，**未取单一结论**。
+- **待人工确认**：
+  - creator-buddy 仓库无 LICENSE 文件；"三年三万粉、月入一两万"仍为作者自述。
+  - @coder_left（程序员 Left）身份检索未获可靠资料；@shao__meng 具体身份未证实（其解读帖被 BitTide 等聚合站收录）。
+  - 部分中文二手解读转述的背景数字（如"Anthropic 内部约 80% 合入代码由 Claude 完成"）未见原文出处。
+
+---
+
 _（新记录追加在下方，日期倒序）_

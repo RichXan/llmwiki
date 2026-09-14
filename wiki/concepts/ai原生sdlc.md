@@ -3,6 +3,8 @@ title: "AI 原生 SDLC"
 type: concept
 aliases:
   - "AI-Native SDLC"
+  - "AI SDLC"
+  - "agentic SDLC"
   - "AI 原生软件开发生命周期"
 tags:
   - concept
@@ -33,9 +35,9 @@ updated: 2026-09-12
 2. **每阶段以提交一份产物结束**：下一个阶段从读取这份产物开始，提交链即审计轨迹。详见 [[产物链]]。
 3. **人的注意力集中在门上**：产物被接受即触发下一阶段；目标状态是"每个被接受的产物自动触发下一道门"。详见 [[审批门]]。
 
-### 六个阶段
+### 六个阶段与若干 play
 
-Plan（`intent.md`）→ Design（`spec.md`）→ Build（`plan.md`、diff、测试）→ Test（测试输出、CI）→ Deploy（带评审记录的 PR）→ Maintain（事故记录 → 新 intent）。详见 [[ai原生软件开发]] 的阶段表。
+Plan（`intent.md`）→ Design（`spec.md`）→ Build（`plan.md`、diff、测试）→ Test（测试输出 / eval）→ Deploy（带评审记录的 PR）→ Maintain（事故记录 → 新 intent）。原文把 play 分入这 **6 个非线性阶段**，细分约 **16 个 play 条目**；**采纳顺序由依赖图决定，不等于阶段顺序**。详见 [[ai原生软件开发]] 的阶段表。
 
 ### 两条比单个 play 更重要的原则
 
@@ -67,4 +69,5 @@ Plan（`intent.md`）→ Design（`spec.md`）→ Build（`plan.md`、diff、测
 ## 来源与待核实问题
 
 - **来源**：[[从intent到闭环-ai原生sdlc]]
-- **待核实**：原文（英文手册）未直接入库，本页依据中文解读整理；具体 play 的完整清单与配置示例以原手册为准。
+- **已核实（网络检索，2026-09-12）**：原文可访问并已核对要点——确为 Anthropic 2026-08-21 发布，作者 Louis Claxton；术语亦称 **agentic SDLC / AI SDLC / agentic software development**；play 按 6 个阶段组织。
+- **待核实**：原文完整 play 清单与逐条配置示例以原手册为准；不同中文解读对 play 数量的口径不一（6 / 10 等），本页采用"6 阶段、约 16 个 play 条目"的表述。

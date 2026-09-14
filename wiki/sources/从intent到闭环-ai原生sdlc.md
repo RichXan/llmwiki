@@ -78,7 +78,21 @@ updated: 2026-09-12
 ## 来源与待核实问题
 
 - **来源**：https://x.com/shao__meng/status/2095034431614677320（原文 https://claude.com/blog/the-ai-native-sdlc-playbook）
-- **待核实**：
-  - 本文为中文解读，个别表格（如产物链、托管设置）在原 t.co 剪藏中因排版丢失，本摘要依据正文文字还原，未与原英文 PDF 逐字校对。
-  - 解读作者 @shao__meng 的身份、以及文中提到的 Claude Security / Claude Tag / Cowork 的正式发布状态与定价。
-  - 原文提到的具体指标数值（如 intent 提交时间"从几周降到几小时"）为作者预期，非实测结论。
+
+### 已核实（网络检索，2026-09-12）
+
+- **原文已取到并核对**：确为《The AI-Native SDLC playbook》，作者 Louis Claxton，2026-08-21；致谢 Jim Blackhurst、Will Steuk、Jamal Arif；分类为 Enterprise AI / Claude Code，相关产品 Claude Enterprise、Claude Code、Claude Tag。
+- **play 计数口径**：原文把 play 分入 **6 个非线性阶段**（Plan / Design / Build / Test / Deploy / Maintain），细分约 **16 个 play 条目**。解读概括为"六个 play"是按阶段主编号计；不同中文解读另有"10 个 play"等说法，**以原文依赖图为准**。
+- **产物链经原文确认**：`intent.md → spec.md → plan.md + diff + 测试 → 验证输出 / eval 结果 → PR + 评审发现 → 事件记录 → 新 intent.md`；原句 "the intent, the spec, the plan, the diff and the review findings are the audit trail"。
+- **术语别名**：原文亦称 **agentic SDLC / AI SDLC / agentic software development**。
+- **Claude Tag**：**public beta**，支持 Slack；Claude 以自己身份成为事故频道成员、每个新事故的"第一响应者"，频道历史即审计记录。
+- **Claude Security**：面向 Claude Enterprise 的**托管定时扫描**（public beta）；连接 GitHub 仓库后在 Anthropic 基础设施上运行，发现附**置信度评分**，建议补丁在 Claude Code on the web 审阅；需安装 Anthropic GitHub App、启用 Extra Usage 并按消耗计费。定位是**增强**而非替代现有静态分析与依赖扫描。
+- **Cowork**：原文在 Plan 阶段用于给非工程师提供入口（与 claude.ai 并列），经 GitHub connector 代提交 Markdown。
+- **托管设置**：原文为 Deploy 阶段的 worked example，逐项解释 `permissions.deny/allow`、`disableBypassPermissionsMode`、`allowManagedPermissionRulesOnly`、`sandbox`（含 `failIfUnavailable`）、`credentials`、`allowManagedHooksOnly`、`disableSideloadFlags`、`strictKnownMarketplaces`、`allowManagedMcpServersOnly`、`requiredMinimumVersion`，并声明这是**起点而非照抄建议**。
+- **配套文章**：Anthropic 另有《How Anthropic secures its AI-native SDLC》（副 CISO Jason Clinton），与本篇互补。
+
+### 仍需人工确认
+
+- 解读作者 @shao__meng 的具体身份（仅确认其解读帖被 BitTide 等聚合站收录）。
+- "intent 提交时间从几周降到几小时"等为作者预期，非实测结论。
+- 部分中文解读转述的背景数字（如"Anthropic 内部约 80% 合入代码由 Claude 完成、人均产出约为 2021–2025 年的 8 倍"）**未见原文出处，待核实**。

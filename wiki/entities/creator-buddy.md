@@ -20,17 +20,22 @@ updated: 2026-09-12
 
 ## 摘要
 
-**creator-buddy** 是作者 [@kongge_space](https://x.com/kongge_space) 开源的一套创作者工具集，其 `gzh-Skills` 目录下收纳了 **10 个公众号写作 Skill**，覆盖账号定位、选题、写作、标题、配图、封面与排版全流程。作者主张把公众号创作拆成可复用的 Skill，让 AI 承担流程性工作、人专注在选题与判断上（详见 [[公众号内容创作系统]]）。
+**creator-buddy** 是作者**空格.space**（X：[@kongge_space](https://x.com/kongge_space)，GitHub `SpaceZephyr`）开源的一套创作者工具集，覆盖公众号、小红书、视频三条创作链。其中 `gzh-Skills` 目录收纳公众号写作 Skill（帖子列举 10 个，目录实测 12 个），覆盖账号定位、选题、写作、标题、配图、封面与排版全流程。作者主张把创作拆成可复用的 Skill，让 AI 承担流程性工作、人专注在选题与判断上（详见 [[公众号内容创作系统]]）。
 
 ## 核心内容
 
 ### 基本信息
 
-- **仓库地址**：https://github.com/SpaceZephyr/creator-buddy/tree/main/gzh-Skills
-- **GitHub 账号**：SpaceZephyr
-- **作者**：@kongge_space（X）
+- **仓库地址**：https://github.com/SpaceZephyr/creator-buddy
+- **GitHub 账号**：SpaceZephyr（名称「空格的键盘」）
+- **作者**：空格.space（X：[@kongge_space](https://x.com/kongge_space)）
 - **来源**：[[10个skill搭建公众号写作系统]]（2026-08-27）
-- **形态**：一套编排在同一仓库下的 Skill，而非单点工具
+- **形态**：一套编排在同一仓库下的 Skill 集合，而非单点工具
+- **三条产品线**：`gzh-Skills/`（公众号）、`xhs-Skills/`（小红书，10 个 Skill）、`video-Skills/`（视频：选题→脚本→剪辑→B-roll→字幕→配音→封面）
+- **协议**：README 与根 SKILL.md 声明 **MIT**；但**仓库根目录未提供可识别的 LICENSE 文件**（待作者补充）
+- **安装**：`npx skills add SpaceZephyr/creator-buddy`（基于开放 Agent Skills 协议，支持 Claude Code / Codex / Cursor 等）
+- **热度快照**：2026-08-27 约 758 stars / 117 forks
+- **使用边界**：只读公开数据，**不代执行发布、点赞、评论等账号动作**；AI 生成的封面与配图仍需人工检查
 
 ### 十个 Skill 一览
 
@@ -47,6 +52,8 @@ updated: 2026-09-12
 | 配图与封面 | `space-text-logic-diagram` | 逻辑配图 | 把段落拆成逻辑关系图，**六种关系类型** |
 | 排版 | `space-wechat-layout` | 整篇排版 | 文章转公众号 HTML，一键复制粘贴进编辑器 |
 
+> 目录实测另有 `global-content-search`（跨平台内容搜索）与 `xhs-hotnotes`（小红书热搜）两个 Skill，因此 `gzh-Skills/` 实际为 **12 个**；上表为帖子列举的 10 个核心 Skill。
+
 ### 在创作流程中的位置
 
 - 与 [[wechat-article-pipeline]]（[[davinci-seven|达芬七]]的流水线）同属"公众号自动化"工具，但侧重点不同：creator-buddy 覆盖**上游创作**，wechat-article-pipeline 聚焦**下游排版发布**。
@@ -62,8 +69,16 @@ updated: 2026-09-12
 ## 来源与待核实问题
 
 - **来源**：[[10个skill搭建公众号写作系统]]
-- **待核实**：
-  - 仓库 **LICENSE**、各 Skill 是否已完整开源、最近提交与维护状态（本次未做网络检索）。
-  - GitHub 账号 `SpaceZephyr` 与 X 账号 `@kongge_space` 是否同一人。
-  - 作者 @kongge_space 的真实身份。
-  - 文中列出的"10 个"以文章自述为准，仓库实际内容可能更多或其他。
+
+### 已核实（网络检索，2026-09-12）
+
+- GitHub `SpaceZephyr` 与 X `@kongge_space` 为同一人（作者名「空格.space」，GitHub 名称「空格的键盘」）。
+- 仓库确含三条产品线（公众号 / 小红书 / 视频），安装命令为 `npx skills add SpaceZephyr/creator-buddy`。
+- 2026-08-27 热度快照约 758 stars / 117 forks。
+- 第三方衍生：摸鱼局长（@Jason23818126）于 2026-08-30 发布 **GZH Buddy**（agent.creao.ai，v1.0.0），系对 gzh-Skills 的封装。
+
+### 仍需人工确认
+
+- **协议**：声明 MIT 但根目录无 LICENSE 文件，实际授权待作者补充。
+- **维护状态**：最近提交时间与本页信息时效性需后续复查。
+- 帖子"10 个"与目录"12 个"的差异属正常范围（另两个为跨平台/小红书 Skill），已在上文注明。

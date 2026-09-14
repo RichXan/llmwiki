@@ -36,8 +36,9 @@ updated: 2026-09-12
 
 - **渐进式加载**：Skill 只先加载名字与元数据，需要时才抓取完整指令。
 - **工具延迟加载**：冷门工具只登记名字，通过 `tool_search` 按需拉取 Schema。
-- **五级上下文防御**：大工具输出落盘 → Snip compact → Micro compact → Context collapse → Full compact。详见 [[上下文压缩]]。
+- **多级上下文压缩**：由轻到重依次为 大工具输出落盘 → Snip → Micro compact → Context collapse → Full compact。**注意**：不同来源对层数/命名有分歧，详见 [[上下文压缩]] 第五节。
 - **Agent Loop**：Messages 单向追加；工具结果封装为 `role: user` + `tool_result`。详见 [[agent-loop]]。
+- **1M 上下文窗口**：Opus 4.6 / Sonnet 4.6 起支持（约 2026-03 GA）。见 [[上下文窗口]]。
 
 ### 在 AI 原生 SDLC 中的角色
 
@@ -61,7 +62,15 @@ updated: 2026-09-12
 ## 来源与待核实问题
 
 - **来源**：[[agent工程解析-上下文管理]]、[[从intent到闭环-ai原生sdlc]]
-- **待核实**：
-  - 上下文组成的具体数字、Token 阈值随版本变化，快照中的数字不代表当前版本。
-  - 五级防御中 Snip compact 等机制官方未完整公开，部分为作者推测。
-  - 本页未做网络检索，官方文档链接待补。
+
+### 已核实（网络检索，2026-09-12）
+
+- **1M 上下文窗口**：Opus 4.6 / Sonnet 4.6 支持，约 2026-03 起 GA。
+- **多级压缩流水线确实存在**：多个独立来源共同确认 Claude Code 有由轻到重的压缩机制（Micro compact / Snip / Context Collapse / 全量摘要）。
+- 官方原文《The AI-Native SDLC playbook》（claude.com/blog）确认 Claude Code 在 AI 原生 SDLC 中的核心地位。
+
+### 分歧 / 仍需人工确认
+
+- 上下文组成的具体数字（约 25K 初始）、各 Token 阈值随版本变化，快照不代表当前版本。
+- 压缩机制的层级归属、命名与阈值**在不同来源间存在分歧**（详见 [[上下文压缩]] 第五节），官方未给出统一权威定义。
+- 本页未逐条核对官方文档；如需精确实现细节，应以 Anthropic 官方文档与源码为准。

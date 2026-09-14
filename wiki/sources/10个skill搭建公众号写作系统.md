@@ -25,7 +25,7 @@ updated: 2026-09-12
 
 ## 元信息
 
-- **作者**：[@kongge_space](https://x.com/kongge_space)（自述做公众号三年、三万粉，身份待核实）
+- **作者**：空格.space（X：[@kongge_space](https://x.com/kongge_space)；GitHub 名称「空格的键盘」，已核实）
 - **发布日期**：2026-08-27
 - **原始链接**：https://x.com/kongge_space/status/2092902850821337330
 - **原始文件**：`[[raw/articles/10 个 Skill 搭建日更爆文的公众号写作系统]]`
@@ -85,8 +85,19 @@ updated: 2026-09-12
 ## 来源与待核实问题
 
 - **来源**：https://x.com/kongge_space/status/2092902850821337330
-- **待核实**：
-  - 作者 @kongge_space 的真实身份（文中仅自述"做公众号三年、三万粉、近半年月入一两万"）。
-  - 报价公式"平均阅读量 × 2"、收入数字属作者个人经验，非普适结论，读者不宜直接套用。
-  - `SpaceZephyr/creator-buddy` 仓库的 LICENSE、10 个 Skill 是否已完整开源、维护状态均待核实。
-  - 文中"10 个 Skill"以文章自述为准，实际仓库内容可能更多。
+
+### 已核实（网络检索，2026-09-12）
+
+- **作者**：空格.space（[@kongge_space](https://x.com/kongge_space)），GitHub 账号 `SpaceZephyr`（名称「空格的键盘」），即该创作者工具集的作者。
+- **仓库**：`SpaceZephyr/creator-buddy` 确认存在，含三条产品线——`gzh-Skills/`（公众号）、`xhs-Skills/`（小红书）、`video-Skills/`（视频）。README 与根 SKILL.md 声明 **MIT**，但**仓库根目录未提供可识别的 LICENSE 文件**。
+- **热度快照**：2026-08-27 采集时约 **758 stars / 117 forks**；作者原帖约 114.3K 浏览、912 赞、163 转发。
+- **Skill 数量修正**：`gzh-Skills/` 目录实测有 **12 个 Skill**，比文中"10 个"多出 `global-content-search` 与 `xhs-hotnotes`（后者属跨平台热搜）。文中"10 个"是作者帖子里列举的核心集合，并非目录全量。
+- **安装与边界**：安装命令 `npx skills add SpaceZephyr/creator-buddy`（基于开放 Agent Skills 协议，支持 Claude Code / Codex / Cursor 等 runtime）。仓库明确**只读公开数据，不代执行发帖/点赞/评论等账号动作**；热点流程依赖外部数据服务，无服务时回退公开搜索。
+- **衍生项目**：摸鱼局长（@Jason23818126）于 2026-08-30 将其封装为 **GZH Buddy**（安装页 agent.creao.ai，Version 1.0.0），属第三方封装传播，非原作者出品。
+- **细节补充**：`baokuan-title-generator` 含 **16 种爆款标题方法**（评分 + A/B）；`gzh-positioning` 带微信硬约束（简介 4–120 字、关注后回复 ≤600 字、一级菜单 ≤4 汉字、二级菜单 ≤8 汉字）与"从历史文章反推定位"。
+
+### 仍需人工确认
+
+- "做公众号三年、三万粉、近半年月入一两万"仍为作者自述，无第三方验证。
+- 报价公式"平均阅读量 × 2"与收入数字属作者个人经验，非普适结论，读者不宜直接套用。
+- 仓库声明 MIT 但根目录无 LICENSE 文件，实际授权以作者后续补充为准。
