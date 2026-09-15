@@ -359,4 +359,52 @@ updated: 2026-09-15
 
 ---
 
+## 2026-09-15（网络检索核实 · Replicate 与 fal）
+
+- **日期**：2026-09-15
+- **资料来源**：网络检索（WebSearch），非 Raw 层文件
+- **新建页面**：
+  - `wiki/entities/replicate.md`（实体）
+  - `wiki/entities/fal.md`（实体）
+- **确认结论**：
+  - **Replicate**：2020 年成立的**开源模型托管 / 推理 API 平台**，~200 模型，**支持自定义模型托管**，按 GPU 计算秒数计费（$0.0002–0.0012/秒），$5 免费额度；文档与社区优于 fal。
+  - **fal.ai**：2023 年成立的**生成式媒体模型聚合 API 平台**，**985 endpoints**（图像 406 / 视频 450 / 音频 59 / 3D 35 / 语音 35），按输出计价，$10 免费额度；第三方称其图像 API 份额 50%、视频 44%。
+  - 两者在来源文章中的角色一致：**"agent 通过 replicate 或 fal 来生成，看你给了它哪个的 key"**——模型供给依赖执行时配置的 key，与 [[skill文件]] 的"流程与执行器解耦"同构。
+- **重要核实发现（模型名存疑）**：来源文章称"目前 **gpt image 2.5** 是最好的图像模型，**seedance 2.5** 是最好的视频模型"。检索到的对应版本为 **GPT Image 1.5** 与 **Seedance 2.0**（字节跳动，2026-02 发布），**两个 "2.5" 版本名均未获证实**，已标注"不排除作者笔误/版本表述误差"。
+- **保留分歧（分歧并存）**：**成本优劣并非单向**——多数第三方向对比称 fal 便宜 30–50%，但 tokenmix 测算指出 Replicate 在低硬件档模型（Flux Dev / SDXL）上可能更省（按实际计算秒数计费），成因是 GPU 档位差异；两种说法的**适用范围不同**，已并列保留。
+- **待人工确认**：
+  - "gpt image 2.5 / seedance 2.5" 两个版本名。
+  - 模型数量、价格、市场份额均为第三方 2026 快照，非官方页面；该领域迭代极快（如 Sora 2 API 已关停），需以官网为准。
+  - 来源文章未指明其在两个平台上实际调用的模型。
+
+---
+
+## 2026-09-15（增量维护 · 第 7 批）
+
+- **日期**：2026-09-15
+- **资料来源**（`raw/articles/`，1 篇未维护文章）：
+  1. `Pi Agent 作者 Armin Ronacher 谈 agent 未来：九条反直觉判断.md`（摘录整理 @Justin1024go，2026-09-14 发布；原访谈为 YouTube 视频）
+- **新建页面**：
+  - 来源摘要（1）：`wiki/sources/armin-ronacher-九条反直觉判断.md`
+  - 概念（2）：`wiki/concepts/harness-极简主义.md`、`wiki/concepts/可内省性.md`
+  - 实体（4）：`wiki/entities/armin-ronacher.md`、`pi-agent.md`、`earendil.md`、`justin-1024go.md`
+- **更新页面**：
+  - `index.md`（目录概览新增 8 条，updated 改为 2026-09-15）
+  - `wiki/topics/agent工程.md`（**新增「两条工程路线（分歧并存）」**；知识地图加"框架路线""人的位置"两行；相关页面与来源扩充）
+- **重要核实发现（标题不准确）**：原文标题称 Armin Ronacher 为"**Pi Agent 作者**"。检索确认 **Pi 的原创作者是 Mario Zechner（libGDX 作者）**，2026-04 由 Earendil 收购后由 Zechner、Ronacher、Colin 共同主导；Ronacher 是**核心使用者与维护者**。已在来源页与实体页**并列标注该分歧**，未直接采信原文标题。
+  - 补充核实：Ronacher = Flask / Jinja 作者，Pygments / Sphinx / Werkzeug / Click 贡献者，Sentry 十年（2025-03 离开），2025 年与 Colin Daymond Hanna 创立 **Earendil**（公益公司）；Pi 为 TypeScript + MIT，约 80,000+ stars（第三方快照，各来源数字不一）。
+- **保留分歧（分歧并存，本批核心贡献）**：本库首次记录**两组明确的 agent 工程路线对立**：
+  1. **事后治理派 vs 事前极简派**：@coder-left 深入 Claude Code 的上下文压缩/裁剪机制（[[上下文压缩]]）vs Ronacher 主张框架极简、从源头避免膨胀（[[harness-极简主义]]）。**共识**是"上下文是稀缺资源"，**分歧**在解法。已在 `agent工程.md` 以对照表并列保留。
+  2. **全功能 harness vs 极简 harness**：Claude Code（系统提示约 7,000–10,000 tokens、预置 sub-agents / hooks / MCP）vs Pi（< 1,000 tokens、四工具、无内置沙箱需自建容器）。各有代价，未取舍。
+- **新增维度**：[[可内省性]]——Ronacher 提出"机器不可问责，所以人类不会退场"、"Markdown / JSON / Unix 管道在赢，因为人能看懂"，与既有的 [[审批门]] 互补（审批门解决"能不能拦住"，可内省性解决"人是否理解发生了什么"）。
+- **待人工确认**：
+  - 摘录者 @Justin1024go 身份；原访谈视频（YouTube）**未逐字核对**，九条内容为二手转述。
+  - Pi 的 star 数各来源不一（58,000 / 80,000+ / 85,000）；收购日期有 2026-04-08 与 2026-05 两种说法。
+  - "全功能 harness 系统提示 7,000–10,000 tokens"为第三方口径，未逐项核对。
+  - Earendil 的融资、估值、员工数未披露；名称有 "Earendil Inc." / "Earendil Works" 两种表述；Lefos 信息有限未建页。
+  - 第 07 条"Earendil 是唯一没有自动修 issue 机器人的 harness 公司"为自嘲式表述，未核实。
+  - 两条工程路线均**无对照评测数据**。
+
+---
+
 _（新记录追加在下方，日期倒序）_

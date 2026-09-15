@@ -89,6 +89,8 @@ updated: 2026-09-15
 - [[视觉自愈循环]]
 - [[需求三等级]]
 - [[skill文件]]
+- [[harness-极简主义]]
+- [[可内省性]]
 
 ### Entities
 
@@ -125,6 +127,12 @@ updated: 2026-09-15
 - [[hermes]]
 - [[apify]]
 - [[whop]]
+- [[replicate]]
+- [[fal]]
+- [[armin-ronacher]]
+- [[pi-agent]]
+- [[earendil]]
+- [[justin-1024go]]
 
 ### Sources
 
@@ -138,6 +146,7 @@ updated: 2026-09-15
 - [[ai改ui翻车]]
 - [[为什么手握codex-claude依然赚不到钱]]
 - [[agent自动化获客完整指南]]
+- [[armin-ronacher-九条反直觉判断]]
 
 ---
 
