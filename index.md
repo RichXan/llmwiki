@@ -66,12 +66,14 @@ updated: 2026-09-15
 - [[ai生成ui]]
 - [[ai创业与需求发现]]
 - [[agent自动化获客]]
+- [[ai自媒体爆款复刻]]
 
 ### Concepts
 
 - [[llm-wiki]]
 - [[llm-wiki-三层架构]]
 - [[去ai味]]
+- [[ai味特征实证]]
 - [[个人写作风格库]]
 - [[ai原生sdlc]]
 - [[意图文件]]
@@ -91,6 +93,7 @@ updated: 2026-09-15
 - [[skill文件]]
 - [[harness-极简主义]]
 - [[可内省性]]
+- [[反差选题法]]
 
 ### Entities
 
@@ -133,6 +136,11 @@ updated: 2026-09-15
 - [[pi-agent]]
 - [[earendil]]
 - [[justin-1024go]]
+- [[lieflat-less-ai-tone]]
+- [[writing-dna-skill]]
+- [[moxt]]
+- [[kaomei]]
+- [[doubao]]
 
 ### Sources
 
@@ -147,6 +155,9 @@ updated: 2026-09-15
 - [[为什么手握codex-claude依然赚不到钱]]
 - [[agent自动化获客完整指南]]
 - [[armin-ronacher-九条反直觉判断]]
+- [[去ai味语料实证研究]]
+- [[hermes私人助理养成指南]]
+- [[爆款复刻-古风武侠英语剧]]
 
 ---
 

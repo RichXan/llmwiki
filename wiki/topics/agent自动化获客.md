@@ -38,7 +38,7 @@ updated: 2026-09-15
 ### 通用机制
 
 - **[[skill文件|Skill 文件]]是核心**：用 [[claude-code|Claude]] 写一次，任何 agent 都能跑；流程与执行器解耦。
-- **Agent 选择**：[[grok-bot|grok bot]]（自带电脑、像聊天一样、零配置）vs [[hermes]]（部署到 Railway、Telegram 交互、为计划任务而建）。
+| Agent 选择 | [[grok-bot|grok bot]]（自带电脑、像聊天一样、零配置）vs [[hermes]]（部署到 Railway、Telegram 交互、为计划任务而建）。**Hermes 的另一面见 [[hermes私人助理养成指南]]**：同样是"自己选模型、接进常用聊天工具、连同积累一起迁走"的长期搭档 |
 - **运行纪律**：一细分一张表绝不跨表读；接触真人或花钱的动作先停下来问；不确定标 review 不猜。
 
 ### 工具栈
