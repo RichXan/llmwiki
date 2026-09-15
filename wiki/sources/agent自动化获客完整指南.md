@@ -111,9 +111,11 @@ Agent 负责：寻找、读取、画像、素材、物业扫描、渲染、建�
 ### 待核实
 
 - ~~[[grok-bot|grok bot]] 与 [[hermes]] 的具体产品指向~~ **已核实（2026-09-15）**：grok bot = xAI 的 **Grok Bot**（2026-08-11 beta，持久云 VM Agent）；hermes = **Nous Research 的 Hermes Agent**（开源，`NousResearch/hermes-agent`，245k★，MIT）。详见两实体页。
+- ~~whop ads "跑在 Meta 最高层级账号、竞价优先、被拒次数远少于新账号"~~ **已核实（2026-09-15）**：[[whop]] 官方文档确认 **Platinum-tier HIVA（Meta 最高层级）**、"priority bidding and lower cost per thousand impressions at scale"、"Fewer [rejections] thanks to higher account standing"——**作者说法与官方口径几乎逐字一致**。
+- ~~[[apify|Apify]] 官网、定价与 MCP 接入~~ **已核实（2026-09-15）**：官方 MCP `apify/apify-mcp-server`（MIT，7,185★）；5,000+ Actors；Free 档 $5 额度/月、Starter $29/月；**合规要求只抓公开页面、不做登录绕过**。详见实体页。
 - [[chris-everest|Chris Everest]] 身份背景；文中提到的"圣诞灯文章"原文。
-- "gpt image 2.5 / seedance 2.5 是最好的图像/视频模型"为作者 2026-09 时点的个人判断。
+- "gpt image 2.5 / seedance 2.5 是最好的图像/视频模型"为作者 2026-09 时点的个人判断（未核实）。
 - "明信片效果远好于邮件和短信"为作者个人测试，无对照数据。
-- whop ads "跑在 Meta 最高层级账号、竞价优先、被拒次数远少于新账号"为作者说法，未与 whop 官方文档核对。
-- **合规限制**（原文自带声明）：冷启动触达与平台数据抓取在部分地区法规和平台规则下有限制，落地前需自行确认。
+- 素材尺寸"Meta 三种尺寸比例"未在 Whop 官方文档核实。
+- **合规限制**（原文自带声明）：冷启动触达与平台数据抓取在部分地区法规和平台规则下有限制，落地前需自行确认。**已获证实**：Apify 官方同样要求 public-only、LinkedIn/Facebook 登录态数据需先取得许可。
 - 转载者 @yibie 身份。

@@ -43,13 +43,14 @@ updated: 2026-09-15
 
 ### 工具栈
 
-| 环节 | 工具 |
-| --- | --- |
-| 数据抓取 | [[apify|Apify]]（MCP 接入，各平台现成 scraper） |
-| 素材生成 | replicate / fal（作者称 gpt image 2.5 图像、seedance 2.5 视频为当时最佳——个人判断，待核实） |
-| 广告投放与销售页 | [[whop|Whop / whop ads]]（Meta 代理投放、真实支付归因） |
-| 部署与交互 | Railway（hermes 部署）、Telegram（@BotFather） |
-| 企业名单 | Google Places（评论数 15–200、老板自营） |
+| 环节 | 工具 | 核实状态 |
+| --- | --- | --- |
+| 数据抓取 | [[apify|Apify]]（MCP 接入，5,000+ 现成 Actors） | ✅ 已核实（官方 MCP MIT，7,185★） |
+| 素材生成 | replicate / fal（作者称 gpt image 2.5 图像、seedance 2.5 视频为当时最佳） | ⚠️ 未核实（个人判断） |
+| 广告投放与销售页 | [[whop|Whop Ads]]（Meta 代理投放、真实支付归因） | ✅ 已核实（Platinum-tier HIVA、Whop Pixel） |
+| Agent 运行时 | [[grok-bot|Grok Bot]]（托管）／[[hermes|Hermes Agent]]（自托管） | ✅ 已核实 |
+| 部署与交互 | Railway（hermes 部署）、Telegram（@BotFather） | ✅ 已核实（Railway 有一键模板） |
+| 企业名单 | Google Places（评论数 15–200、老板自营） | ⚠️ 未核实 |
 
 ### 人机分工
 
@@ -82,8 +83,9 @@ Agent：寻找、读取、画像、素材、物业扫描、渲染、建页面、
 
 ### 待核实
 
-- ~~[[grok-bot]] 与 [[hermes]] 的产品指向~~ **已核实（2026-09-15）**：grok bot = xAI **Grok Bot**（2026-08-11 beta，持久云 VM Agent，Cursor/SuperGrok 账号，$200–300/月）；hermes = **Nous Research Hermes Agent**（开源 MIT，`NousResearch/hermes-agent`，245k★，Telegram + cron 计划任务 + Railway 一键部署）。两实体页已更新。
-- "明信片效果远好于邮件/短信""whop ads 处于 Meta 最高层级、被拒更少"为作者个人测试/说法，无对照数据。
-- "gpt image 2.5 / seedance 2.5 为最佳图像/视频模型"为 2026-09 时点作者判断。
+- ~~[[grok-bot]] 与 [[hermes]] 的产品指向~~ **已核实（2026-09-15）**：grok bot = xAI **Grok Bot**（2026-08-11 beta，持久云 VM Agent，Cursor/SuperGrok 账号，$200–300/月）；hermes = **Nous Research Hermes Agent**（开源 MIT，`NousResearch/hermes-agent`，245k★，Telegram + cron 计划任务 + Railway 一键部署）。
+- ~~"whop ads 处于 Meta 最高层级、被拒更少"~~ **已核实（2026-09-15）**：[[whop]] 官方文档确认 **Platinum-tier HIVA**、"priority bidding and lower cost per thousand impressions at scale"、"Fewer [rejections]"——与作者说法几乎逐字一致。**工具栈合规要求**亦获证实：[[apify|Apify]] 官方要求 public-only、LinkedIn/Facebook 登录态数据需先取得许可。
+- "明信片效果远好于邮件/短信"为作者个人测试，无对照数据（未核实）。
+- "gpt image 2.5 / seedance 2.5 为最佳图像/视频模型"为 2026-09 时点作者判断（未核实）。
 - **合规边界**：各平台对抓取与冷触达的规则、各地区法规（如短信/邮件营销许可）需逐项确认后方可落地。
 - 未见任何第三方复现或实测记录。

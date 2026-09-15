@@ -331,4 +331,32 @@ updated: 2026-09-15
 
 ---
 
+## 2026-09-15（网络检索核实 · whop 与 Apify）
+
+- **日期**：2026-09-15
+- **资料来源**：网络检索（WebSearch + 官方文档 + GitHub API），非 Raw 层文件
+- **新建页面**：无
+- **更新页面**：
+  - `wiki/entities/whop.md`（**核实 + 全面扩写**：Whop Ads 官方文档逐条核对，新增基本信息、来源说法 vs 官方文档对照表、已核实机制；官方文档 docs.whop.com）
+  - `wiki/entities/apify.md`（**核实 + 全面扩写**：官方 MCP `apify/apify-mcp-server`（MIT，7,185★）、5,000+ Actors、套餐与计费、各平台 scraper 对照表、合规边界）
+  - `wiki/sources/agent自动化获客完整指南.md`、`wiki/topics/agent自动化获客.md`（待核实项标记已核实；主题页工具栈表格增加"核实状态"列）
+- **确认结论（重要：作者说法获官方文档背书）**：
+  - **Whop Ads 的"Meta 最高层级账号"说法为真**：官方文档明确写 **Platinum-tier HIVA（Meta's highest tier）— priority bidding and lower cost per thousand impressions at scale**，被拒更少（"Fewer thanks to higher account standing"）、有直接 Meta 代表。来源文章措辞与官方口径几乎逐字一致。
+  - **Whop Pixel = 第一方归因**：官方称 Whop 拥有底层支付栈，pixel 用真实支付数据而非浏览器信号归因，并通过 Conversions API 回传 Meta。
+  - **Whop 出资三方式**：信用卡（2.9% 手续费）／Whop Card（免手续费 + 广告支出 5% 返现）／Pending Whop balance（未结算收入当天可用）。使用 Whop Ads 无平台费、无月费、无最低消费。
+  - **Whop Ads 上线 2026-05-12**；当时仅 Meta（Facebook + Instagram），TikTok / Google / Snapchat / X / Reddit 标注 coming soon。
+  - **Whop 违规清单与来源一致**：Fake or unverifiable income claims / Fake testimonials / Scam-style or deceptive offers，投前跑内置合规检查。
+  - **Apify 官方 MCP 存在**：`apify/apify-mcp-server`，**MIT，7,185★**，2026-09-14 仍在推送。
+  - **Apify 计费**：按 CU（$0.20/CU）+ Actor 用量；Free 档 $5 额度/月（每月重置、无需信用卡）／Starter $29／Scale $199／Business $999。
+  - **Apify 合规口径**：只抓公开可见页面、不做登录绕过；**LinkedIn 与 Facebook 登录态数据需先取得书面许可**；个人数据一律触发 GDPR/CCPA。这与来源文章自带的合规声明**相互印证**。
+- **保留分歧（分歧并存）**：
+  - **Whop 每日消费上限**：官方文档称 agency 账号"无消费上限"，而 whatpayment 解读称"账号从 Day 1 上限逐步爬坡（1–2 周）"——两者表述不一致，可能为文档与实操阶段差异，已并列保留。
+- **待人工确认**：
+  - Whop 素材尺寸"Meta 三种尺寸比例"未在官方文档核实。
+  - Meta 转向 invoice-only 计费的影响（whatpayment 提及，官方未在本批页面说明）。
+  - **平台适用范围**：Whop 是否对中国大陆卖家开放、支持哪些支付方式（含出款）——**对国内落地是硬约束**，未获信息。
+  - Apify 各平台 Actor 的价格/评分为第三方整理的 2026-05 快照，非官方推荐；来源文章未指明所用具体 Actor。
+
+---
+
 _（新记录追加在下方，日期倒序）_
