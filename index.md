@@ -9,7 +9,7 @@ tags:
   - meta
   - 导航
 created: 2026-08-17
-updated: 2026-09-14
+updated: 2026-09-15
 ---
 
 # 知识库导航
@@ -64,6 +64,8 @@ updated: 2026-09-14
 - [[ai原生软件开发]]
 - [[agent工程]]
 - [[ai生成ui]]
+- [[ai创业与需求发现]]
+- [[agent自动化获客]]
 
 ### Concepts
 
@@ -85,6 +87,8 @@ updated: 2026-09-14
 - [[agent-loop]]
 - [[上下文压缩]]
 - [[视觉自愈循环]]
+- [[需求三等级]]
+- [[skill文件]]
 
 ### Entities
 
@@ -116,6 +120,11 @@ updated: 2026-09-14
 - [[louis-claxton]]
 - [[shao-meng]]
 - [[coder-left]]
+- [[chris-everest]]
+- [[grok-bot]]
+- [[hermes]]
+- [[apify]]
+- [[whop]]
 
 ### Sources
 
@@ -127,6 +136,8 @@ updated: 2026-09-14
 - [[agent工程解析-上下文管理]]
 - [[写作指南-ai真实文风]]
 - [[ai改ui翻车]]
+- [[为什么手握codex-claude依然赚不到钱]]
+- [[agent自动化获客完整指南]]
 
 ---
 

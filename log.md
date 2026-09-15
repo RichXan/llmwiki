@@ -8,7 +8,7 @@ tags:
   - meta
   - 日志
 created: 2026-08-17
-updated: 2026-09-14
+updated: 2026-09-15
 ---
 
 # 变更日志
@@ -275,6 +275,59 @@ updated: 2026-09-14
   - 原文目录名拼写不一致（`Eian Writing Corpus` / `EWriting Corpus`），**疑为笔误**，页面已保留原样并标注。
   - Ling-3.0-flash-VL 的参数与"限免 2 周"为转引；"7 秒"为单次非受控记录。
   - UI 自愈实验仅两张卡片、两次录屏，作者自述"说明不了统计规律"。
+
+---
+
+## 2026-09-15（增量维护 · 第 6 批）
+
+- **日期**：2026-09-15
+- **资料来源**（`raw/articles/`，共 2 篇未维护文章）：
+  1. `为什么你手握 Codex、Claude，依然赚不到钱？.md`（@Huouo908070，2026-09-14 发布，观点文）
+  2. `如何使用 Agent 自动化获客（完整指南）.md`（原文 Chris Everest @everestchris6，中译 @yibie，2026-09-14 发布）
+- **新建页面**：
+  - 来源摘要（2）：`wiki/sources/为什么手握codex-claude依然赚不到钱.md`、`agent自动化获客完整指南.md`
+  - 主题（2）：`wiki/topics/ai创业与需求发现.md`、`agent自动化获客.md`
+  - 概念（2）：`wiki/concepts/需求三等级.md`（好奇 / 麻烦 / 正在花钱解决）、`skill文件.md`（Agent 可移植工作流文档）
+  - 实体（5）：`wiki/entities/chris-everest.md`、`grok-bot.md`、`hermes.md`、`apify.md`、`whop.md`
+- **更新页面**：
+  - `index.md`（目录概览新增 11 条，updated 改为 2026-09-15）
+  - `wiki/topics/agent工程.md`（主题边界新增与 [[agent自动化获客]] / [[skill文件]] 的层次说明）
+- **维护决策**：
+  - **不建页（信息量小）**：@Huouo908070、@yibie（仅在来源页标注待核实，与第 5 批 @SenMufs / @Lonely__MH 处理一致）；replicate、fal、gpt image 2.5、seedance 2.5、Railway、@BotFather（在主题页工具栈表格收录）。与前几批"信息少不建页"的决策保持一致。
+  - **跨文章关联**：文章 2 的核心方法"找到已经在付钱的人"被判定为文章 1 [[需求三等级]]第三级的**操作化落地**，两个新主题页已互相建立双链（`ai创业与需求发现` ↔ `agent自动化获客`）。
+  - **合规提示保留**：文章 2 自带"冷启动触达与数据抓取受地区法规/平台规则限制"声明，已在来源页与主题页**原样保留**并前置警示。
+  - **命名消歧**：`hermes` 实体页明确"仅指来源描述的常驻计划任务 Agent 服务"，与 Nous Research Hermes 模型等同名项目的关联标注为未知；`grok-bot` 是否指 xAI Grok 的 agent 形态标注待核实。
+- **保留分歧（分歧并存）**：本批未发现与既有页面冲突的事实性分歧。文章 1"技术不再稀缺、稀缺的是需求判断"与本库既有主题（agent工程、自生长个人知识库等聚焦"怎么用好 AI"）构成**视角互补而非对立**，已在主题页以关系表说明，未取舍。
+- **待人工确认**：
+  - @Huouo908070、@yibie 身份未核实。
+  - `grok-bot` / `hermes` 的产品指向与仓库地址（hermes 名称过泛）。
+  - "gpt image 2.5 / seedance 2.5 为最佳图像/视频模型"（作者 2026-09 时点个人判断）；"明信片效果远好于邮件/短信"（作者个人测试无对照数据）；"whop ads 处于 Meta 最高层级、被拒更少"（作者说法，未对官方文档核对）。
+  - [[skill文件]] 与 Claude Code Agent Skills 机制的兼容关系为**推断**（原文未说明）。
+  - 获客方法的合规边界（平台抓取规则、各地区短信/邮件营销法规）落地前需逐项确认。
+  - 两篇均为单一来源观点/指南，无第三方复现记录。
+
+---
+
+## 2026-09-15（网络检索核实 · grok-bot 与 hermes 实体指向）
+
+- **日期**：2026-09-15
+- **资料来源**：网络检索（WebSearch + GitHub API），非 Raw 层文件
+- **新建页面**：无
+- **更新页面**：
+  - `wiki/entities/grok-bot.md`（**身份核实 + 全面扩写**：xAI Grok Bot，2026-08-11 beta，持久云 VM（浏览器/文件系统/终端），Cursor/SuperGrok 账号认证，$200–300/月，官方文档 docs.x.ai/grok-bot，skills/routines/审批门机制，安全注意事项）
+  - `wiki/entities/hermes.md`（**身份核实 + 全面扩写**：Nous Research 的 Hermes Agent，开源 `NousResearch/hermes-agent`，**MIT，245,618★ / 51,198 forks**（GitHub API 2026-09-15 快照），创建 2025-07-22、当日仍在推送；Telegram 等多渠道 gateway、cron 计划任务、`~/.hermes/skills/.../SKILL.md`、Railway 一键部署；命名消歧：Hermes Agent ≠ Hermes 模型系列，同司不同产品）
+  - `wiki/concepts/skill文件.md`（"与 Claude Code Skill 机制的关系（推断）"升级为"与各生态 Skill 机制的关系（已核实）"：Claude Code / Grok Bot / Hermes 三生态均有 skill 机制支撑可移植性主张；跨生态直接复用仍待实测）
+  - `wiki/sources/agent自动化获客完整指南.md`、`wiki/topics/agent自动化获客.md`（待核实项标记已核实）
+- **确认结论**：
+  - **grok bot = xAI 的 Grok Bot**：与来源文章描述（自带电脑/终端/浏览器/文件系统、像聊天一样交互、给 skill 文件即可跑）完全吻合；产品含原生 skills（演示保存 / marketplace / Private Plugins 安装）与 routines 定时能力。
+  - **hermes = Nous Research 的 Hermes Agent**：与来源文章描述（为计划任务而建、部署 Railway、@BotFather token、Telegram 交互）完全吻合；按本库惯例补充 stars/recency 客观指标（245k★、活跃维护）。
+- **保留分歧（分歧并存）**：
+  - Grok Bot 开发方表述：官方文档署名 xAI；部分新闻称 "SpaceXAI"（xAI–SpaceX 合并实体）并提及 2026-08-14 完成 Cursor 收购——两种口径并列，以官方为准。
+  - Grok Bot 平台覆盖：cual.ai 称无 Linux/Android/iPad 版；windowsmode 称有 Linux 原生版——并列保留。
+- **待人工确认**：
+  - 来源文章"投喂任意 skill .md 文件即运行"的具体导入路径未在 Grok Bot 官方文档逐字核实。
+  - Chris Everest 文中所述"用 prompt 让 Claude 部署 hermes"路径与现行 Railway 图形化模板并存的细节未复现。
+  - 定价/套餐为 2026-08/09 新闻口径，可能变动；star 数为当日快照。
 
 ---
 
